@@ -1,0 +1,212 @@
+/*Importando fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #667eea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+/*Fundos*/
+
+/* Dentro de Assets/Css/style.css */
+.bg_ceu_limpo {
+    background-image: url('../imagens/CeuLimpo.jpg');
+}
+
+.bg_ceu_chuvoso {
+    background-image: url('../imagens/CeuChuvoso.jpg');
+}
+
+.bg_ceu_nublado {
+    background-image: url('../imagens/CeuNublado.jpg');
+}
+
+.bg_ceu_neve{
+    background-image: url('../imagens/CeuNeve.jpg');
+}
+
+.bg_ceu_nuvens{
+    background-image: url('../imagens/CeuNuvens.jpg');
+}
+
+.bg-default {
+    background: linear-gradient(180deg, #4b6cb7 0%, #182848 100%);
+}
+
+.bg_ceu_limpo,
+.bg_ceu_chuvoso,
+.bg_ceu_neve,
+.bg_ceu_nuvens,
+.bg_ceu_nublado{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Para manter fixo ao rolar a tela */
+}
+
+.hide{
+
+    display: none;
+}
+
+.container{
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    color: #ecdede;
+    border-radius: 1rem;
+}
+
+/*form*/
+
+.form{
+
+    margin-bottom: 2rem;
+}
+
+
+.form h3{
+
+    margin-bottom: 0.8rem;
+    color: #333333;
+}
+
+.form-input-container{
+
+    display: flex;
+}
+
+.form-input-container input{
+
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    flex: 1;
+   
+}
+
+.form-input-container input:focus{
+    outline: none;
+
+}
+
+.form-input-container button{
+
+  padding: 0.5rem;
+  min-width: 50px;
+  margin-left: 8px;
+  background-color: #6577E0;
+  color: #ecdede;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.form-input-container button:hover{
+
+  background-color: #4a5ab3; /* azul mais escuro */
+  transition: 0.3s ease;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+/*Icone Carregamento */
+#carregamento{
+
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #ecdede;
+}
+
+/* Msg de erro*/
+
+#mensagemErro{
+
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: red;
+}
+
+/*Clima*/ 
+
+#tempo{
+
+    border-top: 1px solid #ecdede;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: #333333;
+}
+
+#tempo h2{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#tempo h2 i{
+
+   font-size: 1.5rem;
+   color: darkred;
+}
+
+#tempo .space{
+
+    margin: 1rem;
+}
+
+#pais{
+
+    height: 2.5rem;
+}
+
+.descricao-container{
+
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.descricao-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+}
+
+.detalhes-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.detalhes-container #umidade{
+
+    border-right: 2px solid #ecdede;
+    padding: 0.6rem;
+    margin: 0.6rem;
+}
+
+
+

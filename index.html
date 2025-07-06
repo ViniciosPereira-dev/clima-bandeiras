@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - API`s</title>
+
+    <!--Link Css-->
+    <link rel="stylesheet" href="Assets/Css/style.css">
+
+    <!--Link Js-->
+    <script src="Assets/Js/script.js" defer></script>
+
+    <!--Font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+    <body>
+        <div class="container">
+            <div class="form">
+                <h3>Saiba o clima de qualquer cidade:</h3>
+                <div class="form-input-container">
+                    <input type="text" placeholder=" Ex São Paulo   " id="cidade_input">
+                    <button id="pesquisa">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button id="limparDados">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="carregamento" class="hide">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+            </div>
+
+            <p id="mensagemErro" class="hide">
+                
+            </p>
+
+            <div id="tempo" class="hide">
+
+                <h2>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="space" id="cidade"></span>
+                    <img src="" alt="Pais Bandeira" id="pais">
+                </h2>
+
+                <p id="temperatura">
+                    <span></span> <span>&deg;C</span>
+                </p>
+                
+                <div class="descricao-container">
+                    <p id="descricao">
+                       
+                    </p>
+                    <img src="" alt="Condições climaticas" id="tempo-icon" height="64">
+                </div>
+
+                <div class="detalhes-container">
+                    <p id="umidade">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span></span>
+                    </p>
+
+                    <p id="vento">
+                        <i class="fa-solid fa-wind"></i>
+                        <span></span>
+                    </p>
+                </div>   
+
+            </div>
+        </div>
+    </body>
+</html>
