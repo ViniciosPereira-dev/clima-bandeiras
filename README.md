@@ -33,7 +33,6 @@ Projeto web que consome **duas APIs públicas** para exibir:
   - Clima (ex: Nublado, Chuva, Limpo)
   - Nome do país
   - Bandeira do país
-  - 
 ---
 
 ## 🖼️ Screenshot
